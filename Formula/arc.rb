@@ -5,21 +5,21 @@
 class Arc < Formula
   desc "Terminal-first personal knowledge OS"
   homepage "https://github.com/jrniemiec/arc"
-  version "0.7.0"
+  version "0.7.6"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/jrniemiec/arc/releases/download/v0.7.0/arc_0.7.0_darwin_amd64.tar.gz"
-    sha256 "4ab990571cc93a7cd2f66f05036de29c2c4de142a7f86a3aeec827dc02a395ef"
+    url "https://github.com/jrniemiec/arc/releases/download/v0.7.6/arc_0.7.6_darwin_amd64.tar.gz"
+    sha256 "d4382c5a42d8d494ae32cc42946244fb7d7f98554a64be2a42f1f08bf0fe7430"
 
     define_method(:install) do
       bin.install "arc"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/jrniemiec/arc/releases/download/v0.7.0/arc_0.7.0_darwin_arm64.tar.gz"
-    sha256 "3f2bbca548fcdb3c1d2fae477179efb6fd597fedfbc07476104d0a83b6a7a74a"
+    url "https://github.com/jrniemiec/arc/releases/download/v0.7.6/arc_0.7.6_darwin_arm64.tar.gz"
+    sha256 "832a0e4fa4a0acc17ad9c9d1c9cd286eb726efa7c9c520061330999f038e97e9"
 
     define_method(:install) do
       bin.install "arc"
